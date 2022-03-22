@@ -12,10 +12,6 @@ $('input[type="checkbox"]').on('keyup', function(e) {
     $("#submit").click();
 });
 
-$('input[type="checkbox"]').on('change', function() {
-    $('input[type="checkbox"]').not(this).prop('checked', false);
-});
-
 $('#submit').click(function(e){
     var elements = $('input[type="checkbox"]');
     $('input[type="checkbox"]').prop('style', 'outline: 2px solid red;');
@@ -105,6 +101,10 @@ for (var i = 0; i < chooseCount; i++) {
     label.appendChild(img);
     insertAfter(after, label);
 }
+
+$('input[type="checkbox"]').on('change', function() {
+    $('input[type="checkbox"]').not(this).prop('checked', false);
+});
 
 $('#previous').click();
 
