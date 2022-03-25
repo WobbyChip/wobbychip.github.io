@@ -23,41 +23,37 @@ $('#submit').click(function(e){
 });
 
 $('#random').click(function(e){
-    var size = $('input[type="checkbox"]').length;
     current = randomInt(signs.length);
-    selected = signs[current];
-    correct = randomInt(size)+1;
-
-    prepareSelect(size);
+    prepareSelect($('input[type="checkbox"]').length);
 });
 
 $('#previous').click(function(e){
-    var size = $('input[type="checkbox"]').length;
-
     if (current-1 >= 0) {
         current -= 1;
     }
 
-    selected = signs[current];
-    correct = randomInt(size)+1;
-
-    prepareSelect(size);
+    prepareSelect($('input[type="checkbox"]').length);
 });
 
 $('#next').click(function(e){
-    var size = $('input[type="checkbox"]').length;
-
     if (current+1 < signs.length) {
         current += 1;
     }
 
-    selected = signs[current];
-    correct = randomInt(size)+1;
-
-    prepareSelect(size);
+    prepareSelect($('input[type="checkbox"]').length);
 });
 
 function prepareSelect(size) {
+    if (window.location.href.includes("#")) {
+        var loc = `${window.location.href.split("#")[0]}#id=${current+1}`;
+    } else {
+        var loc = `${window.location.href}#id=${current+1}`
+    }
+
+    location.replace(loc);
+    selected = signs[current];
+    correct = randomInt(size)+1;
+
     $('#current')[0].innerHTML = current+1;
     $('#text')[0].innerHTML = selected.name;
     $('#type')[0].innerHTML = selected.type;
@@ -106,7 +102,16 @@ for (var i = 0; i < chooseCount; i++) {
     insertAfter(after, label);
 }
 
-$('#previous').click();
+const queryString = "?"+window.location.href.split("#").pop();
+const urlParams = new URLSearchParams(queryString);
+const id = urlParams.get('id');
+
+if ((id != null) && !isNaN(id) && (Number(id)-1 > 0) && (Number(id) <= signs.length)) {
+    current = Number(id-1);
+    prepareSelect($('input[type="checkbox"]').length);
+} else {
+    $('#previous').click();
+}
 
 //preload all images
 (async () => {
