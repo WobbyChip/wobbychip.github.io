@@ -102,6 +102,10 @@ for (var i = 0; i < chooseCount; i++) {
     insertAfter(after, label);
 }
 
+$('input[type="checkbox"]').on('change', function() {
+    $('input[type="checkbox"]').not(this).prop('checked', false);
+});
+
 const queryString = "?"+window.location.href.split("#").pop();
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
