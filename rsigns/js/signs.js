@@ -320,13 +320,13 @@ signs = [
     {
         "name": "Iebraukt aizliegts",
         "type": "AIZLIEGUMA ZIMES",
-        "description": "",
+        "description": "Aizliegts iebraukt jebkadiem transportlidzekliem. Zimes darbiba neattiecas uz sabiedriskajiem pasazieru transportlidzekliem.",
         "image": "images/301-200x200.jpg"
     },
     {
         "name": "Braukt aizliegts",
         "type": "AIZLIEGUMA ZIMES",
-        "description": "",
+        "description": "Aizliegts braukt jebkadiem transportlidzekliem. Zimes darbiba neattiecas uz transportlidzekliem, kuri nogada vai brauc sanemt kravu, un specialajiem transportlidzekliem, kas brauc veikt darbus saja zona, ka ari neattiecas uz automobiliem, kuru ipasnieks dzivo vai strada saja zona, un uz taksometriem, kuri brauc pec pasaziera vai nogada saja zona pasazieri.",
         "image": "images/302-200x200.jpg"
     },
     {
@@ -344,7 +344,7 @@ signs = [
     {
         "name": "Velosipediem braukt aizliegts",
         "type": "AIZLIEGUMA ZIMES",
-        "description": "",
+        "description": "Aizliegts braukt velosipediem un mopediem.",
         "image": "images/305-200x200.jpg"
     },
     {
@@ -368,7 +368,7 @@ signs = [
     {
         "name": "Gajejiem iet aizliegts",
         "type": "AIZLIEGUMA ZIMES",
-        "description": "",
+        "description": "Zimes darbiba attiecas tikai uz to cela pusi, kura ta uzstadita.",
         "image": "images/309-200x200.jpg"
     },
     {
@@ -470,7 +470,7 @@ signs = [
     {
         "name": "Apstaties aizliegts",
         "type": "AIZLIEGUMA ZIMES",
-        "description": "",
+        "description": "Jauzstada, lai aizliegtu transportlidzekliem apstaties un stavet. Zime jauzstada taja brauktuves puse, kura jaaizliedz apstaties un stavet. Si zime neattiecas uz pasazieru sabiedriskajiem transportlidzekliem.",
         "image": "images/326-200x200.jpg"
     },
     {

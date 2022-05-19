@@ -26,6 +26,10 @@ label img {
     margin-bottom: 10;
 }
 
+.allowSelect {
+    user-select: text;
+}
+
 #current {
     display: inline;
     font-size: 14px;
