@@ -1,5 +1,2 @@
-index.js
-node_modules/
-package-lock.json
-package.json
-iplogger/
+runtime/node_modules/*
+runtime/package-lock.json

@@ -35,3 +35,20 @@ label img {
     font-size: 14px;
     margin-left: 5px;
 }
+
+#selected {
+    display: inline;
+    font-size: 14px;
+	width: 215px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+#amount {
+    display: inline;
+    font-size: 14px;
+	width: 215px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
