@@ -57,6 +57,11 @@ var navigationItems = [
         href: "https://github.com/WobbyChip/Delphi/tree/master/MBR%20UEFI%20-%20Note%20Builder",
         icon: "fas fa-dice-d6",
     },
+    {
+        name: "KitteyHacker",
+        href: "https://mega.nz/file/LAMSSAoC#A-J5dVf-zIC06xz4qIShqZrYUAOd5ZuHElR4jy3CHqw",
+        icon: "fas fa-paw",
+    },
 ]
 
 
