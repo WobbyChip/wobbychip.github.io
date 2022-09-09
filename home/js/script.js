@@ -10,24 +10,6 @@ var navigationItems = [
         icon: "fas fa-music",
     },
     {
-        name: "UNO Game",
-        href: "https://uno-game-website.herokuapp.com",
-        icon: "fas fa-dice-six",
-        onclick: function() { alert("Please wait while website is launching."); }
-    },
-    {
-        name: "Kahoot Flood",
-        href: "https://kahoot-flood-website.herokuapp.com/",
-        icon: "fab fa-kickstarter-k",
-        onclick: function() { alert("Please wait while website is launching."); }
-    },
-    {
-        name: "Remote Prank",
-        href: "https://remote-prank.herokuapp.com/",
-        icon: "fas fa-smile-wink",
-        onclick: function() { alert("Please wait while website is launching."); }
-    },
-    {
         name: "Soundboard",
         href: "https://github.com/WobbyChip/Delphi/tree/master/Soundborad",
         icon: "fas fa-volume-up",
