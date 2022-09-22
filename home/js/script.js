@@ -41,7 +41,7 @@ var navigationItems = [
     },
     {
         name: "KitteyHacker",
-        href: "https://mega.nz/file/LAMSSAoC#A-J5dVf-zIC06xz4qIShqZrYUAOd5ZuHElR4jy3CHqw",
+        href: "https://github.com/aadrians1/kitteyhacker/raw/main/KitteyHacker.exe",
         icon: "fas fa-paw",
     },
 ]
