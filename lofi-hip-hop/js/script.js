@@ -157,6 +157,7 @@ async function loadTags(blob) {
 }
 
 (async () => {
+    $('#button')[0].onclick = shuffleMusic;
     playlist = JSON.parse(await loadPlaylist());
     shuffleMusic();
 })();
