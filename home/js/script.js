@@ -47,7 +47,7 @@ var navigationItems = [
 ]
 
 
-function CreateItem(item) {
+function createItem(item) {
     var i = document.createElement("i");
     i.className = item.icon;
 
@@ -74,8 +74,5 @@ function CreateItem(item) {
 }
 
 
-navigationItems.forEach(item => {
-    CreateItem(item);
-});
-
+navigationItems.forEach(item => { createItem(item); });
 document.getElementsByClassName("toggle")[0].click();
